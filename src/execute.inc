@@ -744,6 +744,9 @@ Function ex_font(cmd$)
       Case "medium"
         con.set_font(1)
         ex_font = E_OK
+      Case "large"
+        con.set_font(2)
+        ex_font = E_OK
       Case Else
         con.println("Unknown font.")
         con.endl()
